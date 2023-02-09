@@ -52,6 +52,6 @@ public class GameManager : MonoBehaviour
 
     public void AddItem(Item item)
     {
-        CanvasInventory.AddItem(item);
+        CanvasInventory.Instance.AddItem(item);
     }
 }
