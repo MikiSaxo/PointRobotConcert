@@ -9,18 +9,17 @@ public class GameManager : MonoBehaviour
 
     [field: SerializeField] public PlayerController Player { get; private set; }
     [field: SerializeField] public CanvasInventory CanvasInventory { get; private set; }
+    
     public const string NextSceneKey = "NextScene";
+
+    private IInteractable _lastTouchedInterac;
 
     private void Awake()
     {
         if (Instance == null)
-        {
             Instance = this;
-        }
         else
-        {
             Debug.LogError("WTF");
-        }
     }
 
     private void Start()
@@ -45,6 +44,12 @@ public class GameManager : MonoBehaviour
                 if (interactable != null)
                 {
                     interactable.Execute();
+                    _lastTouchedInterac = interactable;
+                }
+                else
+                {
+                    _lastTouchedInterac.ResetClicked();
+                    _lastTouchedInterac = null;
                 }
             }
         }

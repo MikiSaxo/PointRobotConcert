@@ -1,11 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class PlayerController : MonoBehaviour
 {
-    public void Move(Vector2 position)
+    [SerializeField] private float _speed;
+
+    public void Move(Vector2 goalPos)
     {
-        transform.position = position;
+        Vector2 pos = transform.position;
+        var distance = Vector2.Distance(pos, goalPos);
+        transform.DOKill();
+        transform.DOMove(goalPos, distance / _speed).SetEase(Ease.Linear);
     }
 }

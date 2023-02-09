@@ -5,4 +5,6 @@ using UnityEngine;
 public interface IInteractable
 {
     void Execute();
+
+    void ResetClicked();
 }
