@@ -12,6 +12,6 @@ public class PlayerController : MonoBehaviour
         Vector2 pos = transform.position;
         var distance = Vector2.Distance(pos, goalPos);
         transform.DOKill();
-        transform.DOMove(goalPos, distance / _speed).SetEase(Ease.Linear);
+        transform.DOMoveX(goalPos.x, distance / _speed).SetEase(Ease.Linear);
     }
 }

@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
     [field: SerializeField] public PlayerController Player { get; private set; }
     [field: SerializeField] public CanvasInventory CanvasInventory { get; private set; }
     [SerializeField] private Transform[] _spawnPointsPlayer;
-    
+
     public const string NextSceneKey = "NextScene";
 
     private IInteractable _lastTouchedInterac;
@@ -57,9 +57,15 @@ public class GameManager : MonoBehaviour
                 }
                 else
                 {
-                    _lastTouchedInterac.ResetClicked();
-                    _lastTouchedInterac = null;
+                    if (_lastTouchedInterac != null)
+                        _lastTouchedInterac.ResetClicked();
+                    // _lastTouchedInterac = null;
                 }
+            }
+            else
+            {
+                if (_lastTouchedInterac != null)
+                    _lastTouchedInterac.ResetClicked();
             }
         }
     }
