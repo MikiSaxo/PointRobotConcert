@@ -25,7 +25,7 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        SceneManager.LoadScene(PlayerPrefs.GetString(NextSceneKey, "Scene1"), LoadSceneMode.Additive);
+        SceneManager.LoadScene(PlayerPrefs.GetString(NextSceneKey, "1.Maison"), LoadSceneMode.Additive);
         PlayerPrefs.DeleteKey(NextSceneKey);
     }
 
