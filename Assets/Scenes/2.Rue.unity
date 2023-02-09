@@ -131,6 +131,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1975850275564211284, guid: c11de7a278559d34fb6539db5ed52671, type: 3}
+      propertyPath: _isLeft
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1975850275564211284, guid: c11de7a278559d34fb6539db5ed52671, type: 3}
       propertyPath: _nextScene
       value: 1.Maison
       objectReference: {fileID: 0}

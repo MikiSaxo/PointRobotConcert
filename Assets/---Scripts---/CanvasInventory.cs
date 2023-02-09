@@ -8,6 +8,8 @@ public class CanvasInventory : MonoBehaviour
 {
     public static CanvasInventory Instance;
     
+    [field: SerializeField] public bool SaveLastDoorSide { get; set; }
+
     [SerializeField] private GameObject _prefabItem;
     [SerializeField] private GameObject _panel;
 

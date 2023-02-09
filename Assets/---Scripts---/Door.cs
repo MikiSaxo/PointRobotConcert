@@ -6,11 +6,13 @@ using UnityEngine.SceneManagement;
 public class Door : MonoBehaviour, IInteractable
 {
     [SerializeField] private string _nextScene;
+    [SerializeField] private bool _isLeft;
     private bool _clicked;
 
     public void Execute()
     {
         _clicked = true;
+        CanvasInventory.Instance.SaveLastDoorSide = _isLeft;
     }
     
     public void ResetClicked()

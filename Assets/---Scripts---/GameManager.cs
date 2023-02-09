@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -9,6 +11,7 @@ public class GameManager : MonoBehaviour
 
     [field: SerializeField] public PlayerController Player { get; private set; }
     [field: SerializeField] public CanvasInventory CanvasInventory { get; private set; }
+    [SerializeField] private Transform[] _spawnPointsPlayer;
     
     public const string NextSceneKey = "NextScene";
 
@@ -26,6 +29,12 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene(PlayerPrefs.GetString(NextSceneKey, "1.Maison"), LoadSceneMode.Additive);
         PlayerPrefs.DeleteKey(NextSceneKey);
+        ChooseSpawnPlayer(CanvasInventory.Instance.SaveLastDoorSide ? 1 : 0);
+    }
+
+    private void ChooseSpawnPlayer(int pos)
+    {
+        Player.transform.position = _spawnPointsPlayer[pos].position;
     }
 
     private void Update()
