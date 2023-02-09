@@ -7,6 +7,6 @@ public class Menu : MonoBehaviour
 {
     public void OnClickPlay()
     {
-        SceneManager.LoadScene("GameCommon");
+        SceneManager.LoadScene("--InitScene--");
     }
 }

@@ -161,7 +161,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -10, y: 144}
-  m_SizeDelta: {x: 160, y: 30}
+  m_SizeDelta: {x: 1116.82, y: 209.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &140335978
 MonoBehaviour:
@@ -268,7 +268,7 @@ GameObject:
   - component: {fileID: 638113882}
   - component: {fileID: 638113881}
   m_Layer: 0
-  m_Name: Scripts
+  m_Name: _Scripts
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -453,12 +453,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
+  m_fontSize: 187.4
   m_fontSizeBase: 24
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 0
-  m_fontSizeMax: 0
+  m_fontSizeMax: 1000
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
