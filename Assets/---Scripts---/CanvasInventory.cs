@@ -3,15 +3,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using DG.Tweening;
 
 public class CanvasInventory : MonoBehaviour
 {
     public static CanvasInventory Instance;
     
     [HideInInspector] public bool SaveLastDoorSide { get; set; }
+    [HideInInspector] public bool IsMouseOnUI { get; private set; }
 
     [SerializeField] private GameObject _prefabItem;
     [SerializeField] private GameObject _panel;
+    [SerializeField] private GameObject _inventory;
+    [SerializeField] private GameObject _inventoryButton;
+    [SerializeField] private GameObject _backInventoryButton;
+    [SerializeField] private Vector2 _timeOpenCloseInventory;
 
     private List<string> _allItemsPickedUp = new List<string>();
 
@@ -47,5 +53,27 @@ public class CanvasInventory : MonoBehaviour
                 return true;
         }
         return false;
+    }
+
+    public void OpenInventory()
+    {
+        _inventory.transform.DOKill();
+        _inventory.transform.DOScale(1, _timeOpenCloseInventory.x);
+        _inventoryButton.SetActive(false);
+        _backInventoryButton.SetActive(true);
+    }
+
+    public void CloseInventory()
+    {
+        _inventory.transform.DOKill();
+        _inventory.transform.DOScale(0, _timeOpenCloseInventory.y);
+        _inventoryButton.SetActive(true);
+        _backInventoryButton.SetActive(false);
+    }
+
+    public void IsMouseUI(bool which)
+    {
+        print("coucou : " + which);
+        IsMouseOnUI = which;
     }
 }

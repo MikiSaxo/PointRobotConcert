@@ -44,7 +44,9 @@ public class GameManager : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             Vector3 mousePosWorld = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            Player.Move(mousePosWorld);
+            
+            if(!CanvasInventory.Instance.IsMouseOnUI)
+                Player.Move(mousePosWorld);
 
             RaycastHit2D hit = Physics2D.Raycast(mousePosWorld, Vector2.right, 0.01f,_layerMask);
 
