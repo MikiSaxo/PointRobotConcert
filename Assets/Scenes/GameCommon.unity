@@ -147,7 +147,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 82238378}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.9, y: -2.06, z: 0}
+  m_LocalPosition: {x: -8, y: -4.42, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -245,7 +245,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 983324006}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.9, y: -2.06, z: 0}
+  m_LocalPosition: {x: 8, y: -4.42, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -293,10 +293,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Player>k__BackingField: {fileID: 1464829335}
-  <CanvasInventory>k__BackingField: {fileID: 0}
   _spawnPointsPlayer:
   - {fileID: 82238379}
   - {fileID: 983324007}
+  _layerMask:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!4 &1915887407
 Transform:
   m_ObjectHideFlags: 0
@@ -352,6 +354,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2515589924676585587, guid: b352dbf3c5a223048b4ce9ac0ee9e986, type: 3}
+      propertyPath: m_Size.y
+      value: 9.690172
+      objectReference: {fileID: 0}
+    - target: {fileID: 2515589924676585587, guid: b352dbf3c5a223048b4ce9ac0ee9e986, type: 3}
+      propertyPath: m_Offset.y
+      value: 4.356864
+      objectReference: {fileID: 0}
     - target: {fileID: 6993421885962105046, guid: b352dbf3c5a223048b4ce9ac0ee9e986, type: 3}
       propertyPath: m_Name
       value: Player
@@ -366,7 +376,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8303840806564907731, guid: b352dbf3c5a223048b4ce9ac0ee9e986, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.06
+      value: -4.42
       objectReference: {fileID: 0}
     - target: {fileID: 8303840806564907731, guid: b352dbf3c5a223048b4ce9ac0ee9e986, type: 3}
       propertyPath: m_LocalPosition.z

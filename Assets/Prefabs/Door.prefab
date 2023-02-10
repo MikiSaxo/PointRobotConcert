@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1975850275564211306}
   - component: {fileID: 1975850275564211285}
   - component: {fileID: 1975850275564211284}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -125,3 +125,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _nextScene: 2.Rue
+  _isLeft: 0

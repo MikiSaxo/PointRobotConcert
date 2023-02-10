@@ -10,8 +10,10 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance;
 
     [field: SerializeField] public PlayerController Player { get; private set; }
-    [field: SerializeField] public CanvasInventory CanvasInventory { get; private set; }
+    // [field: SerializeField] public CanvasInventory CanvasInventory { get; private set; }
     [SerializeField] private Transform[] _spawnPointsPlayer;
+    [SerializeField] private LayerMask _layerMask;
+
 
     public const string NextSceneKey = "NextScene";
 
@@ -44,7 +46,7 @@ public class GameManager : MonoBehaviour
             Vector3 mousePosWorld = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             Player.Move(mousePosWorld);
 
-            RaycastHit2D hit = Physics2D.Raycast(mousePosWorld, Vector2.right, 0.01f);
+            RaycastHit2D hit = Physics2D.Raycast(mousePosWorld, Vector2.right, 0.01f,_layerMask);
 
             if (hit.collider != null)
             {
