@@ -7,7 +7,7 @@ using UnityEngine;
 
 public class Item : MonoBehaviour, IInteractable
 {
-    [field: SerializeField] public string Name { get; private set; }
+    [field: SerializeField] public string ItemName { get; private set; }
     [field: SerializeField] public Sprite ItemImage { get; private set; }
     [field: SerializeField] public Sprite ItemSelectedImage { get; private set; }
 
@@ -21,7 +21,7 @@ public class Item : MonoBehaviour, IInteractable
 
     private void Start()
     {
-        if (CanvasInventory.Instance.IsObjectAlreadyPickUp(Name))
+        if (CanvasInventory.Instance.IsObjectAlreadyPickUp(ItemName))
         {
             if (_isPermanent)
                 _isEmpty = true;
