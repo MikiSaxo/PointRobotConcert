@@ -19,6 +19,7 @@ public class CanvasInventory : MonoBehaviour
     [SerializeField] private GameObject _inventoryButton;
     [SerializeField] private GameObject _backInventoryButton;
     [SerializeField] private Vector2 _timeOpenCloseInventory;
+    [SerializeField] private PopUpManager _popUpManager;
 
     private List<string> _allItemsPickedUp = new List<string>();
 
@@ -44,6 +45,8 @@ public class CanvasInventory : MonoBehaviour
         GameObject newItem = Instantiate(_prefabItem, _panel.transform, false);
         _allItemsPickedUp.Add(item.Name);
         newItem.GetComponent<ItemUi>().Initialize(item);
+        
+        _popUpManager.InitNewItem(item.ItemImage, item.name);
     }
 
     public bool IsObjectAlreadyPickUp(string item)

@@ -53,7 +53,10 @@ public class Item : MonoBehaviour, IInteractable
     {
         GameManager.Instance.AddItem(this);
         if (_isPermanent)
+        {
+            OnPointerExit();
             _isEmpty = true;
+        }
         else
             Destroy(gameObject);
     }
