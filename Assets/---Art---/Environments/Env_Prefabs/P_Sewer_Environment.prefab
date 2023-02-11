@@ -199,7 +199,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6112461204773886793}
   m_Layer: 0
-  m_Name: Sewer_Environment
+  m_Name: P_Sewer_Environment
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

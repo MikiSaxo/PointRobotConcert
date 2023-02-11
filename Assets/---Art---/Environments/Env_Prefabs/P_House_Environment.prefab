@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1103894710736009288}
   - component: {fileID: 1103894710736009291}
-  - component: {fileID: 1103894710736009290}
   m_Layer: 0
   m_Name: Trash_withOutline
   m_TagString: Untagged
@@ -85,46 +84,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!68 &1103894710736009290
-EdgeCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1103894710736009301}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
-  m_Points:
-  - {x: 0.24085134, y: -1.3748302}
-  - {x: -0.15738964, y: -1.3842568}
-  - {x: -0.15374279, y: -1.2749879}
-  - {x: -0.32686472, y: -1.2492154}
-  - {x: -0.33844376, y: -1.1345928}
-  - {x: -0.1776185, y: -1.0254397}
-  - {x: -0.20863247, y: -0.87720513}
-  - {x: -0.7353649, y: -0.7380984}
-  - {x: -0.9388561, y: 0.85053015}
-  - {x: -0.8424349, y: 1.0353905}
-  - {x: 0.8696761, y: 1.3764044}
-  - {x: 0.9305029, y: 0.96344805}
-  - {x: 0.7894788, y: -0.6068535}
-  - {x: 0.77269125, y: -0.85320735}
-  - {x: 0.3052864, y: -0.90186787}
-  - {x: 0.26879597, y: -1.0073595}
-  - {x: 0.4708209, y: -1.0863814}
-  - {x: 0.46157026, y: -1.1942976}
-  - {x: 0.23690891, y: -1.2886014}
-  - {x: 0.24205214, y: -1.3760314}
-  m_AdjacentStartPoint: {x: 0, y: 0}
-  m_AdjacentEndPoint: {x: 0, y: 0}
-  m_UseAdjacentStartPoint: 0
-  m_UseAdjacentEndPoint: 0
 --- !u!1 &1103894711199328480
 GameObject:
   m_ObjectHideFlags: 0
@@ -135,7 +94,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1103894711199328487}
   - component: {fileID: 1103894711199328486}
-  - component: {fileID: 1103894711199328481}
   m_Layer: 0
   m_Name: Door_withOutline
   m_TagString: Untagged
@@ -210,50 +168,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!68 &1103894711199328481
-EdgeCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1103894711199328480}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
-  m_Points:
-  - {x: 2.2241518, y: -3.6185782}
-  - {x: -2.2556508, y: -3.5170152}
-  - {x: -2.226456, y: -3.3633893}
-  - {x: -1.5874283, y: -2.9098077}
-  - {x: -1.5543349, y: -2.7030685}
-  - {x: -1.6477716, y: -2.562842}
-  - {x: -1.6403801, y: -0.6168745}
-  - {x: -1.4980314, y: -0.36108828}
-  - {x: -1.5457208, y: 1.8977681}
-  - {x: -1.6588104, y: 2.0746195}
-  - {x: -1.7221067, y: 3.2412386}
-  - {x: -1.5741565, y: 3.4061816}
-  - {x: 1.7388656, y: 3.6155121}
-  - {x: 1.8221979, y: 3.3588288}
-  - {x: 1.7598763, y: 2.176386}
-  - {x: 1.6664417, y: 2.1198606}
-  - {x: 1.6183687, y: -0.5884832}
-  - {x: 1.76742, y: -0.8013434}
-  - {x: 1.8329401, y: -2.2815492}
-  - {x: 1.6648717, y: -2.4691796}
-  - {x: 1.6807492, y: -2.7426004}
-  - {x: 2.242437, y: -3.2488341}
-  - {x: 2.271132, y: -3.5625794}
-  - {x: 2.2236025, y: -3.6209784}
-  m_AdjacentStartPoint: {x: 0, y: 0}
-  m_AdjacentEndPoint: {x: 0, y: 0}
-  m_UseAdjacentStartPoint: 0
-  m_UseAdjacentEndPoint: 0
 --- !u!1 &1103894711202328822
 GameObject:
   m_ObjectHideFlags: 0
@@ -264,7 +178,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1103894711202328821}
   - component: {fileID: 1103894711202328820}
-  - component: {fileID: 1103894711202328823}
   m_Layer: 0
   m_Name: Trash
   m_TagString: Untagged
@@ -339,46 +252,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!68 &1103894711202328823
-EdgeCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1103894711202328822}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
-  m_Points:
-  - {x: 0.26142305, y: -1.1253982}
-  - {x: -0.12088871, y: -1.1165822}
-  - {x: -0.1202836, y: -1.0377309}
-  - {x: -0.3055725, y: -0.99370766}
-  - {x: -0.31106806, y: -0.8912523}
-  - {x: -0.15936804, y: -0.7790575}
-  - {x: -0.18429852, y: -0.6247394}
-  - {x: -0.7079892, y: -0.49475765}
-  - {x: -0.91147995, y: 1.0877872}
-  - {x: -0.8059335, y: 1.2908981}
-  - {x: 0.89401054, y: 1.6106197}
-  - {x: 0.95483685, y: 1.225039}
-  - {x: 0.7894788, y: -0.6068535}
-  - {x: 0.3308792, y: -0.65957}
-  - {x: 0.31042957, y: -0.752723}
-  - {x: 0.49251318, y: -0.8273568}
-  - {x: 0.49653578, y: -0.9423795}
-  - {x: 0.25585318, y: -1.0374382}
-  - {x: 0.2626238, y: -1.1265993}
-  - {x: 0.26262385, y: -1.1265993}
-  m_AdjacentStartPoint: {x: 0, y: 0}
-  m_AdjacentEndPoint: {x: 0, y: 0}
-  m_UseAdjacentStartPoint: 0
-  m_UseAdjacentEndPoint: 0
 --- !u!1 &1103894711716563449
 GameObject:
   m_ObjectHideFlags: 0
@@ -509,7 +382,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1103894712621128055}
   - component: {fileID: 1103894712621128054}
-  - component: {fileID: 1103894712621128049}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -584,47 +456,3 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!68 &1103894712621128049
-EdgeCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1103894712621128048}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
-  m_Points:
-  - {x: 2.2241518, y: -3.6185782}
-  - {x: -2.2556508, y: -3.5170152}
-  - {x: -2.226456, y: -3.3633893}
-  - {x: -1.5874283, y: -2.9098077}
-  - {x: -1.5543349, y: -2.7030685}
-  - {x: -1.6477716, y: -2.562842}
-  - {x: -1.6403801, y: -0.6168745}
-  - {x: -1.4980314, y: -0.36108828}
-  - {x: -1.5457208, y: 1.8977681}
-  - {x: -1.6588104, y: 2.0746195}
-  - {x: -1.7221067, y: 3.2412386}
-  - {x: -1.5741565, y: 3.4061816}
-  - {x: 1.7388656, y: 3.6155121}
-  - {x: 1.8221979, y: 3.3588288}
-  - {x: 1.7598763, y: 2.176386}
-  - {x: 1.6664417, y: 2.1198606}
-  - {x: 1.6183687, y: -0.5884832}
-  - {x: 1.76742, y: -0.8013434}
-  - {x: 1.8329401, y: -2.2815492}
-  - {x: 1.6648717, y: -2.4691796}
-  - {x: 1.6807492, y: -2.7426004}
-  - {x: 2.242437, y: -3.2488341}
-  - {x: 2.271132, y: -3.5625794}
-  - {x: 2.2236025, y: -3.6209784}
-  m_AdjacentStartPoint: {x: 0, y: 0}
-  m_AdjacentEndPoint: {x: 0, y: 0}
-  m_UseAdjacentStartPoint: 0
-  m_UseAdjacentEndPoint: 0
