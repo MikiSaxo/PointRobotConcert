@@ -40,4 +40,9 @@ public class ItemUi : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+    public string GetItemName()
+    {
+        return _saveItem.ItemName;
+    }
 }

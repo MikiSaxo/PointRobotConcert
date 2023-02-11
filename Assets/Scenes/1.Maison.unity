@@ -209,12 +209,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 206888110654821668, guid: 996523af60bebe04c81b8aede20bb05a, type: 3}
       propertyPath: m_Size.y
-      value: 2.77
+      value: 2.8
       objectReference: {fileID: 0}
     - target: {fileID: 206888110654821668, guid: 996523af60bebe04c81b8aede20bb05a, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -274596726, guid: 4453809dd79d5b74faa51f1a1b5b772d, type: 3}
+      objectReference: {fileID: -1130627891, guid: 90f2b84aea6dab24aabdfa534cf0b6ac, type: 3}
     - target: {fileID: 206888110654821669, guid: 996523af60bebe04c81b8aede20bb05a, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -270,7 +270,7 @@ PrefabInstance:
     - target: {fileID: 206888110654821670, guid: 996523af60bebe04c81b8aede20bb05a, type: 3}
       propertyPath: _objSprite
       value: 
-      objectReference: {fileID: -274596726, guid: 4453809dd79d5b74faa51f1a1b5b772d, type: 3}
+      objectReference: {fileID: 21300000, guid: 4453809dd79d5b74faa51f1a1b5b772d, type: 3}
     - target: {fileID: 206888110654821670, guid: 996523af60bebe04c81b8aede20bb05a, type: 3}
       propertyPath: _isPermanent
       value: 1
@@ -349,8 +349,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.86, y: 2.77}
-    newSize: {x: 1.86, y: 2.77}
+    oldSize: {x: 1.86, y: 2.8}
+    newSize: {x: 1.86, y: 2.8}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -836,12 +836,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: -1393384542, guid: 4453809dd79d5b74faa51f1a1b5b772d, type: 3}
+  m_Sprite: {fileID: -1996690678, guid: 90f2b84aea6dab24aabdfa534cf0b6ac, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.76, y: 0.34}
+  m_Size: {x: 1.91, y: 3.23}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1

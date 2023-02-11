@@ -19,13 +19,12 @@ public class CanvasInventory : MonoBehaviour
     [SerializeField] private GameObject _inventory;
     [SerializeField] private GameObject _panelInventory;
     // [SerializeField] private GameObject _fabrik;
-    [SerializeField] private GameObject _panelfabrik;
+    // [SerializeField] private GameObject _panelfabrik;
     [SerializeField] private PopUpManager _popUpManager;
     [SerializeField] private Vector2 _timeOpenCloseInventory;
     [Header("Buttons")]
     [SerializeField] private GameObject _inventoryButton;
     [SerializeField] private GameObject _backInventoryButton;
-    [SerializeField] private GameObject _transformButton;
 
     private List<string> _allItemsPickedUp = new List<string>();
 
