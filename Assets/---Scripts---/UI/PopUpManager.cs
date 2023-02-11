@@ -24,7 +24,7 @@ public class PopUpManager : MonoBehaviour
 
         if (_hasAlreadyAnim)
             _stopCoroutine = true;
-        
+
         StartCoroutine(AnimNewItem());
         _hasAlreadyAnim = true;
     }
@@ -34,16 +34,16 @@ public class PopUpManager : MonoBehaviour
         // transform.DOComplete();
         transform.DOKill();
         transform.DOScale(0, 0);
-        
+
         transform.DOScale(1, _timeToSpawn);
         yield return new WaitForSeconds(_timeToWait);
-       
+
         if (_stopCoroutine)
         {
             ForceResetAnim();
             yield break;
         }
-        
+
         transform.DOScale(1.25f, .1f);
         yield return new WaitForSeconds(.15f);
 
@@ -52,15 +52,16 @@ public class PopUpManager : MonoBehaviour
             ForceResetAnim();
             yield break;
         }
-        
+
         transform.DOScale(0, _timeToDespawn);
-        
+
         _hasAlreadyAnim = false;
         _stopCoroutine = false;
     }
 
     private void ForceResetAnim()
     {
+        transform.DOKill();
         transform.DOScale(0, _timeToDespawn);
     }
 }

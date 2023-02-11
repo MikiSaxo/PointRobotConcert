@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 206888110654821670}
   - component: {fileID: 206888110654821666}
   m_Layer: 6
-  m_Name: Michel
+  m_Name: Entry Ticket
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: e72310df060779248849f41e84477ce6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 121812c9a3c073b47ac4292f2a45a8a9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -115,9 +115,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b062e7d0753ecab4895f4f0da29f4666, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <ItemName>k__BackingField: Michel
-  <ItemImage>k__BackingField: {fileID: 21300000, guid: e72310df060779248849f41e84477ce6, type: 3}
-  <ItemSelectedImage>k__BackingField: {fileID: 21300000, guid: 59a88e1e5e33eff42890fd27d610030a, type: 3}
+  <ItemName>k__BackingField: Entry Ticket
+  <ItemImage>k__BackingField: {fileID: 21300000, guid: 121812c9a3c073b47ac4292f2a45a8a9, type: 3}
+  <ItemSelectedImage>k__BackingField: {fileID: 21300000, guid: 121812c9a3c073b47ac4292f2a45a8a9, type: 3}
   _isPermanent: 0
   _objSprite: {fileID: 21300000, guid: e72310df060779248849f41e84477ce6, type: 3}
   _objSpriteSelected: {fileID: 21300000, guid: 59a88e1e5e33eff42890fd27d610030a, type: 3}

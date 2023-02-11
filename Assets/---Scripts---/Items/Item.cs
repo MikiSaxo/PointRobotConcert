@@ -58,7 +58,7 @@ public class Item : MonoBehaviour, IInteractable
             _isEmpty = true;
         }
         else
-            Destroy(gameObject);
+            gameObject.SetActive(false);
     }
 
     private void OnTriggerEnter2D(Collider2D col)
@@ -80,6 +80,7 @@ public class Item : MonoBehaviour, IInteractable
     {
         // print("enter");
         if (_isEmpty) return;
+        
         GetComponent<SpriteRenderer>().sprite = _objSpriteSelected;
     }
 

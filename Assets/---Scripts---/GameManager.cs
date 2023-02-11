@@ -34,6 +34,9 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(PlayerPrefs.GetString(NextSceneKey, "1.Maison"), LoadSceneMode.Additive);
         PlayerPrefs.DeleteKey(NextSceneKey);
         ChooseSpawnPlayer(CanvasInventory.Instance.SaveLastDoorSide ? 1 : 0);
+
+        ResetLastTouched();
+        ResetLastEntered();
     }
 
     private void ChooseSpawnPlayer(int pos)
@@ -90,30 +93,26 @@ public class GameManager : MonoBehaviour
             else
             {
                 if (_lastEnteredInterac != null && !_lastEnteredInterac.GetHasClicked())
-                    _lastEnteredInterac.OnPointerExit();
-                _lastEnteredInterac = null;
+                    ResetLastEntered();
             }
 
             if (Input.GetMouseButtonDown(0))
             {
                 if (!CanvasInventory.Instance.IsMouseOnUI)
                     Player.Move(mousePosWorld);
-                
+
                 if (interactable != null && !CanvasInventory.Instance.IsInventoryOpen)
                 {
-                    if (_lastTouchedInterac != null)
-                    {
-                        _lastTouchedInterac.ResetClicked();
-                        _lastTouchedInterac.OnPointerExit();
-                    }
-                
+                    ResetLastTouched();
+                    ResetLastEntered();
+
                     interactable.Execute();
                     _lastTouchedInterac = interactable;
                 }
                 else
                 {
                     if (_lastTouchedInterac != null)
-                        _lastTouchedInterac.ResetClicked();
+                       ResetLastTouched();
                 }
             }
         }
@@ -123,12 +122,9 @@ public class GameManager : MonoBehaviour
             {
                 if (!CanvasInventory.Instance.IsMouseOnUI)
                     Player.Move(mousePosWorld);
-                
-                if (_lastTouchedInterac != null)
-                    _lastTouchedInterac.ResetClicked();
-                
-                if (_lastEnteredInterac != null)
-                    _lastEnteredInterac.OnPointerExit();
+
+                ResetLastTouched();
+                ResetLastEntered();
             }
 
             if (_lastEnteredInterac != null && !_lastEnteredInterac.GetHasClicked())
@@ -139,10 +135,30 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    private void ResetLastTouched()
+    {
+        if (_lastTouchedInterac != null)
+        {
+            _lastTouchedInterac.ResetClicked();
+            _lastTouchedInterac.OnPointerExit();
+            _lastTouchedInterac = null;
+        }
+    }
+
+    private void ResetLastEntered()
+    {
+        if (_lastEnteredInterac != null)
+        {
+            _lastEnteredInterac.ResetClicked();
+            _lastEnteredInterac.OnPointerExit();
+            _lastEnteredInterac = null;
+        }
+    }
+
     public void AddItem(Item item)
     {
-        _lastEnteredInterac = null;
-        _lastTouchedInterac = null;
+        ResetLastEntered();
+        ResetLastTouched();
         CanvasInventory.Instance.AddItem(item, true);
     }
 }

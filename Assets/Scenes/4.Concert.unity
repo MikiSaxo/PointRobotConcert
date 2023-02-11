@@ -310,6 +310,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DoorEntree
       objectReference: {fileID: 0}
+    - target: {fileID: 1975850275564211287, guid: c11de7a278559d34fb6539db5ed52671, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1975850275564211307, guid: c11de7a278559d34fb6539db5ed52671, type: 3}
       propertyPath: m_RootOrder
       value: 1

@@ -158,7 +158,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -8.000122, y: -1.0579834}
+  m_AnchoredPosition: {x: 0, y: -1.0579834}
   m_SizeDelta: {x: 1920, y: 116.942}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1746719842522995956
@@ -503,7 +503,7 @@ Transform:
   m_GameObject: {fileID: 4018515065116558926}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -952, y: 449, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 4939132839584460127}
@@ -592,11 +592,28 @@ MonoBehaviour:
   _prefabItem: {fileID: 102235254421204489, guid: cd93825782adecf4d84518bc222cc4b2, type: 3}
   _itemsConditions:
   - Needed:
-    - Ciseaux
-    - Cartouche 1/3
-    Result: Michel
+    - Cartridge 1/3
+    - Cartridge 2/3
+    - Cartridge 3/3
+    - Empty Bottle
+    Result: Bottle Of Ink
+  - Needed:
+    - Bottle Of Water
+    Result: Empty Bottle
+  - Needed:
+    - Bill
+    - Scissors
+    Result: Plastic
+  - Needed:
+    - Plastic
+    - Bottle Of Ink
+    - Paper
+    Result: Entry Ticket
   _itemToFabrik:
-  - {fileID: 206888110654821673, guid: 5c88c0f05f493594b948e13db7db3fd9, type: 3}
+  - {fileID: 206888110654821673, guid: 10a4f644d4548af4f979895fd1c6ba9e, type: 3}
+  - {fileID: 206888110654821673, guid: 95f5d164fe56d324fa90193540815fd5, type: 3}
+  - {fileID: 206888110654821673, guid: d6ea83df250a22f458ac44f2f592bc06, type: 3}
+  - {fileID: 206888110654821673, guid: 442360d93d740a54a96281c4f22f875c, type: 3}
 --- !u!1 &4234698161321993956
 GameObject:
   m_ObjectHideFlags: 0
@@ -748,8 +765,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1366,6 +1383,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ButtonOption
       objectReference: {fileID: 0}
+    - target: {fileID: 3391909848747603396, guid: 35d3c954e069e284290975d2bc02b954, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3811979683590456944, guid: 35d3c954e069e284290975d2bc02b954, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1668,11 +1689,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5771559546347523922, guid: 35d3c954e069e284290975d2bc02b954, type: 3}
       propertyPath: m_text
-      value: Transformer
+      value: Transform
       objectReference: {fileID: 0}
     - target: {fileID: 5771559546347523922, guid: 35d3c954e069e284290975d2bc02b954, type: 3}
       propertyPath: m_fontSize
-      value: 46.15
+      value: 55.45
       objectReference: {fileID: 0}
     - target: {fileID: 5771559546347523922, guid: 35d3c954e069e284290975d2bc02b954, type: 3}
       propertyPath: m_enableAutoSizing

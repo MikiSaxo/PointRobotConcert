@@ -270,7 +270,7 @@ PrefabInstance:
     - target: {fileID: 206888110654821670, guid: 996523af60bebe04c81b8aede20bb05a, type: 3}
       propertyPath: _objSprite
       value: 
-      objectReference: {fileID: 21300000, guid: 4453809dd79d5b74faa51f1a1b5b772d, type: 3}
+      objectReference: {fileID: -1130627891, guid: 90f2b84aea6dab24aabdfa534cf0b6ac, type: 3}
     - target: {fileID: 206888110654821670, guid: 996523af60bebe04c81b8aede20bb05a, type: 3}
       propertyPath: _isPermanent
       value: 1
@@ -289,7 +289,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: 581251b86014981439b3d22ee844d0c5, type: 3}
     - target: {fileID: 206888110654821670, guid: 996523af60bebe04c81b8aede20bb05a, type: 3}
       propertyPath: <ItemName>k__BackingField
-      value: Cartouche 3/3
+      value: Cartridge 3/3
       objectReference: {fileID: 0}
     - target: {fileID: 206888110654821670, guid: 996523af60bebe04c81b8aede20bb05a, type: 3}
       propertyPath: <ItemImage>k__BackingField
@@ -530,7 +530,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: 581251b86014981439b3d22ee844d0c5, type: 3}
     - target: {fileID: 206888110654821670, guid: 996523af60bebe04c81b8aede20bb05a, type: 3}
       propertyPath: <ItemName>k__BackingField
-      value: Cartouche 1/3
+      value: Cartridge 1/3
       objectReference: {fileID: 0}
     - target: {fileID: 206888110654821670, guid: 996523af60bebe04c81b8aede20bb05a, type: 3}
       propertyPath: <ItemImage>k__BackingField
@@ -554,7 +554,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 206888110654821673, guid: 996523af60bebe04c81b8aede20bb05a, type: 3}
       propertyPath: m_Name
-      value: Cartouche 1/3
+      value: Cartridge 1/3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 996523af60bebe04c81b8aede20bb05a, type: 3}
@@ -666,7 +666,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: 581251b86014981439b3d22ee844d0c5, type: 3}
     - target: {fileID: 206888110654821670, guid: 996523af60bebe04c81b8aede20bb05a, type: 3}
       propertyPath: <ItemName>k__BackingField
-      value: Cartouche 2/3
+      value: Cartridge 2/3
       objectReference: {fileID: 0}
     - target: {fileID: 206888110654821670, guid: 996523af60bebe04c81b8aede20bb05a, type: 3}
       propertyPath: <ItemImage>k__BackingField
@@ -690,7 +690,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 206888110654821673, guid: 996523af60bebe04c81b8aede20bb05a, type: 3}
       propertyPath: m_Name
-      value: Cartouche 2/3
+      value: Cartridge 2/3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 996523af60bebe04c81b8aede20bb05a, type: 3}
@@ -923,7 +923,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: a0d2a679f4c3a0b40b6f83fdff7c97b2, type: 3}
     - target: {fileID: 206888110654821670, guid: 996523af60bebe04c81b8aede20bb05a, type: 3}
       propertyPath: <ItemName>k__BackingField
-      value: Ciseaux
+      value: Scissors
       objectReference: {fileID: 0}
     - target: {fileID: 206888110654821670, guid: 996523af60bebe04c81b8aede20bb05a, type: 3}
       propertyPath: <ItemImage>k__BackingField
@@ -935,7 +935,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: a0d2a679f4c3a0b40b6f83fdff7c97b2, type: 3}
     - target: {fileID: 206888110654821673, guid: 996523af60bebe04c81b8aede20bb05a, type: 3}
       propertyPath: m_Name
-      value: Ciseaux
+      value: Scissors
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 996523af60bebe04c81b8aede20bb05a, type: 3}
