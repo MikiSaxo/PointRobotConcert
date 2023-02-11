@@ -130,6 +130,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 232976296, guid: fa8c5b259fa081a4490034a025d201b3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 1746719842522995959, guid: fa8c5b259fa081a4490034a025d201b3, type: 3}
+      propertyPath: m_Pivot.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1746719842522995959, guid: fa8c5b259fa081a4490034a025d201b3, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1746719842522995959, guid: fa8c5b259fa081a4490034a025d201b3, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1746719842522995959, guid: fa8c5b259fa081a4490034a025d201b3, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1746719842522995959, guid: fa8c5b259fa081a4490034a025d201b3, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 987.942
+      objectReference: {fileID: 0}
     - target: {fileID: 1746719842876496929, guid: fa8c5b259fa081a4490034a025d201b3, type: 3}
       propertyPath: m_Name
       value: CanvasInventory
@@ -218,6 +242,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3391909849026789167, guid: fa8c5b259fa081a4490034a025d201b3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6010281008210264553, guid: fa8c5b259fa081a4490034a025d201b3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
-    - {fileID: 6884494589830485768, guid: fa8c5b259fa081a4490034a025d201b3, type: 3}
+    - {fileID: 0}
+    - {fileID: 7396912889776736843, guid: fa8c5b259fa081a4490034a025d201b3, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: fa8c5b259fa081a4490034a025d201b3, type: 3}

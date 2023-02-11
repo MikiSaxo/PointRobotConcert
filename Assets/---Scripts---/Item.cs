@@ -8,6 +8,9 @@ using UnityEngine;
 public class Item : MonoBehaviour, IInteractable
 {
     [field: SerializeField] public string Name { get; private set; }
+    [field: SerializeField] public Sprite Image { get; private set; }
+    [field: SerializeField] public Sprite SelectedImage { get; private set; }
+    
 
     private bool _hasTouchPlayer;
     private bool _clicked;
@@ -55,4 +58,22 @@ public class Item : MonoBehaviour, IInteractable
         if (col.GetComponent<PlayerController>())
             _hasTouchPlayer = false;
     }
+
+    public void OnPointerEnter()
+    {
+        print("enter");
+        GetComponent<SpriteRenderer>().sprite = SelectedImage;
+    }
+
+    public void OnPointerExit()
+    {
+        print("leave");
+        GetComponent<SpriteRenderer>().sprite = Image;
+    }
+
+    public bool GetHasClicked()
+    {
+        return _clicked;
+    }
+
 }

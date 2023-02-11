@@ -5,6 +5,8 @@ using UnityEngine;
 public interface IInteractable
 {
     void Execute();
-
     void ResetClicked();
+    void OnPointerEnter();
+    void OnPointerExit();
+    bool GetHasClicked();
 }

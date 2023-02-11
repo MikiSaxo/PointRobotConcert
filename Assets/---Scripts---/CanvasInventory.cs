@@ -11,6 +11,7 @@ public class CanvasInventory : MonoBehaviour
     
     [HideInInspector] public bool SaveLastDoorSide { get; set; }
     [HideInInspector] public bool IsMouseOnUI { get; private set; }
+    [HideInInspector] public bool IsInventoryOpen { get; private set; }
 
     [SerializeField] private GameObject _prefabItem;
     [SerializeField] private GameObject _panel;
@@ -57,6 +58,7 @@ public class CanvasInventory : MonoBehaviour
 
     public void OpenInventory()
     {
+        IsInventoryOpen = true;
         _inventory.transform.DOKill();
         _inventory.transform.DOScale(1, _timeOpenCloseInventory.x);
         _inventoryButton.SetActive(false);
@@ -65,6 +67,7 @@ public class CanvasInventory : MonoBehaviour
 
     public void CloseInventory()
     {
+        IsInventoryOpen = false;
         _inventory.transform.DOKill();
         _inventory.transform.DOScale(0, _timeOpenCloseInventory.y);
         _inventoryButton.SetActive(true);
@@ -73,7 +76,6 @@ public class CanvasInventory : MonoBehaviour
 
     public void IsMouseUI(bool which)
     {
-        print("coucou : " + which);
         IsMouseOnUI = which;
     }
 }

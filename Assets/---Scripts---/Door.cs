@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Playables;
 using UnityEngine.SceneManagement;
 
 public class Door : MonoBehaviour, IInteractable
@@ -49,5 +50,20 @@ public class Door : MonoBehaviour, IInteractable
     {
         PlayerPrefs.SetString(GameManager.NextSceneKey, _nextScene);
         SceneManager.LoadScene("GameCommon");
+    }
+
+    public void OnPointerEnter()
+    {
+        
+    }
+
+    public void OnPointerExit()
+    {
+        
+    }
+    
+    public bool GetHasClicked()
+    {
+        return _clicked;
     }
 }
