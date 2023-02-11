@@ -101,6 +101,12 @@ public class GameManager : MonoBehaviour
                 
                 if (interactable != null && !CanvasInventory.Instance.IsInventoryOpen)
                 {
+                    if (_lastTouchedInterac != null)
+                    {
+                        _lastTouchedInterac.ResetClicked();
+                        _lastTouchedInterac.OnPointerExit();
+                    }
+                
                     interactable.Execute();
                     _lastTouchedInterac = interactable;
                 }
@@ -137,6 +143,6 @@ public class GameManager : MonoBehaviour
     {
         _lastEnteredInterac = null;
         _lastTouchedInterac = null;
-        CanvasInventory.Instance.AddItem(item);
+        CanvasInventory.Instance.AddItem(item, true);
     }
 }
