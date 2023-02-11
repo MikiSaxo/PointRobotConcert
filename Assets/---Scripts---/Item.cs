@@ -61,13 +61,13 @@ public class Item : MonoBehaviour, IInteractable
 
     public void OnPointerEnter()
     {
-        print("enter");
+        // print("enter");
         GetComponent<SpriteRenderer>().sprite = SelectedImage;
     }
 
     public void OnPointerExit()
     {
-        print("leave");
+        // print("leave");
         GetComponent<SpriteRenderer>().sprite = Image;
     }
 

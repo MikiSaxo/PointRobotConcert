@@ -10,6 +10,9 @@ public class Door : MonoBehaviour, IInteractable
     [SerializeField] private string _nextScene;
     [SerializeField] private bool _isLeft;
     
+    [field: SerializeField] public Sprite Image { get; private set; }
+    [field: SerializeField] public Sprite SelectedImage { get; private set; }
+    
     private bool _clicked;
     private bool _hasTouchPlayer;
 
@@ -54,12 +57,12 @@ public class Door : MonoBehaviour, IInteractable
 
     public void OnPointerEnter()
     {
-        
+        GetComponent<SpriteRenderer>().sprite = SelectedImage;
     }
 
     public void OnPointerExit()
     {
-        
+        GetComponent<SpriteRenderer>().sprite = Image;
     }
     
     public bool GetHasClicked()
