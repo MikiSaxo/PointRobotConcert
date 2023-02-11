@@ -8,21 +8,32 @@ using UnityEngine;
 public class Item : MonoBehaviour, IInteractable
 {
     [field: SerializeField] public string Name { get; private set; }
-    [field: SerializeField] public Sprite Image { get; private set; }
-    [field: SerializeField] public Sprite SelectedImage { get; private set; }
-    
+    [field: SerializeField] public Sprite ItemImage { get; private set; }
+    [field: SerializeField] public Sprite ItemSelectedImage { get; private set; }
 
+    [SerializeField] private bool _isPermanent;
+    [SerializeField] private Sprite _objSprite;
+    [SerializeField] private Sprite _objSpriteSelected;
+
+    private bool _isEmpty;
     private bool _hasTouchPlayer;
     private bool _clicked;
 
     private void Start()
     {
         if (CanvasInventory.Instance.IsObjectAlreadyPickUp(Name))
-            Destroy(gameObject);
+        {
+            if (_isPermanent)
+                _isEmpty = true;
+            else
+                Destroy(gameObject);
+        }
     }
 
     public void Execute()
     {
+        if (_isEmpty) return;
+
         _clicked = true;
         CheckIfGoToInventory();
     }
@@ -41,7 +52,10 @@ public class Item : MonoBehaviour, IInteractable
     private void GoToInventory()
     {
         GameManager.Instance.AddItem(this);
-        Destroy(gameObject);
+        if (_isPermanent)
+            _isEmpty = true;
+        else
+            Destroy(gameObject);
     }
 
     private void OnTriggerEnter2D(Collider2D col)
@@ -62,13 +76,14 @@ public class Item : MonoBehaviour, IInteractable
     public void OnPointerEnter()
     {
         // print("enter");
-        GetComponent<SpriteRenderer>().sprite = SelectedImage;
+        if (_isEmpty) return;
+        GetComponent<SpriteRenderer>().sprite = _objSpriteSelected;
     }
 
     public void OnPointerExit()
     {
         // print("leave");
-        GetComponent<SpriteRenderer>().sprite = Image;
+        GetComponent<SpriteRenderer>().sprite = _objSprite;
     }
 
     public bool GetHasClicked()

@@ -9,11 +9,11 @@ public class ItemUi : MonoBehaviour
     public void Initialize(Item item)
     {
         GetComponentInChildren<TMPro.TMP_Text>().text = item.Name;
-        GetComponent<Image>().sprite = item.Image;
+        GetComponent<Image>().sprite = item.ItemImage;
         
         SpriteState ss = new SpriteState();
-        ss.highlightedSprite = item.SelectedImage;
-        ss.selectedSprite = item.SelectedImage;
+        ss.highlightedSprite = item.ItemSelectedImage;
+        ss.selectedSprite = item.ItemSelectedImage;
         GetComponent<Button>().spriteState = ss;
     }
 }
