@@ -768,6 +768,11 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 206888110654821670, guid: 996523af60bebe04c81b8aede20bb05a, type: 3}
+      propertyPath: _monologue
+      value: 'This plastic protection could be useful if I could separate it from
+        the rest of the poster... '
+      objectReference: {fileID: 0}
+    - target: {fileID: 206888110654821670, guid: 996523af60bebe04c81b8aede20bb05a, type: 3}
       propertyPath: _objSprite
       value: 
       objectReference: {fileID: 21300000, guid: 4702dae2b0d0d324582a05e6d4574b7e, type: 3}
@@ -789,12 +794,12 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: 581251b86014981439b3d22ee844d0c5, type: 3}
     - target: {fileID: 206888110654821670, guid: 996523af60bebe04c81b8aede20bb05a, type: 3}
       propertyPath: <ItemName>k__BackingField
-      value: Bill
+      value: Poster
       objectReference: {fileID: 0}
     - target: {fileID: 206888110654821670, guid: 996523af60bebe04c81b8aede20bb05a, type: 3}
       propertyPath: <ItemImage>k__BackingField
       value: 
-      objectReference: {fileID: 21300000, guid: 53c64b0915bf6fc4282d2942d6cb3755, type: 3}
+      objectReference: {fileID: 21300000, guid: bb8e8efce654e1445a8aab2685c056a9, type: 3}
     - target: {fileID: 206888110654821670, guid: 996523af60bebe04c81b8aede20bb05a, type: 3}
       propertyPath: <SelectedImage>k__BackingField
       value: 
@@ -802,7 +807,7 @@ PrefabInstance:
     - target: {fileID: 206888110654821670, guid: 996523af60bebe04c81b8aede20bb05a, type: 3}
       propertyPath: <ItemSelectedImage>k__BackingField
       value: 
-      objectReference: {fileID: 21300000, guid: 4d4d70b47851bf84f8194a41c66865c2, type: 3}
+      objectReference: {fileID: 21300000, guid: 7abcb96eb7bc5d846bd69d613c25b1b1, type: 3}
     - target: {fileID: 206888110654821671, guid: 996523af60bebe04c81b8aede20bb05a, type: 3}
       propertyPath: m_Radius
       value: 0.9036908
@@ -817,7 +822,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 206888110654821673, guid: 996523af60bebe04c81b8aede20bb05a, type: 3}
       propertyPath: m_Name
-      value: Bill
+      value: Poster
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 206888110654821671, guid: 996523af60bebe04c81b8aede20bb05a, type: 3}
