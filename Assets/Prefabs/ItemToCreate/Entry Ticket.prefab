@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 121812c9a3c073b47ac4292f2a45a8a9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 33dfe13069d04d540a9e34a83acb0ffc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -116,11 +116,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <ItemName>k__BackingField: Entry Ticket
-  <ItemImage>k__BackingField: {fileID: 21300000, guid: 121812c9a3c073b47ac4292f2a45a8a9, type: 3}
-  <ItemSelectedImage>k__BackingField: {fileID: 21300000, guid: 121812c9a3c073b47ac4292f2a45a8a9, type: 3}
+  <ItemImage>k__BackingField: {fileID: 21300000, guid: 33dfe13069d04d540a9e34a83acb0ffc, type: 3}
+  <ItemSelectedImage>k__BackingField: {fileID: 21300000, guid: d780a2c91db2e514b8e99710b3b02769, type: 3}
   _isPermanent: 0
   _objSprite: {fileID: 21300000, guid: e72310df060779248849f41e84477ce6, type: 3}
   _objSpriteSelected: {fileID: 21300000, guid: 59a88e1e5e33eff42890fd27d610030a, type: 3}
+  _monologue: Hehehe... It's perfect, I'm sure that the big guy at the entrance of
+    the room won't see anything wrong with it.
 --- !u!114 &206888110654821666
 MonoBehaviour:
   m_ObjectHideFlags: 0

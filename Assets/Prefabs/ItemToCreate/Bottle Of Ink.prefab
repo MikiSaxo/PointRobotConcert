@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 51b7321c8b4e2be49bef838b453fd968, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5e77362493e713e4496c09118bad1ddf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -116,11 +116,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <ItemName>k__BackingField: Bottle Of Ink
-  <ItemImage>k__BackingField: {fileID: 21300000, guid: 51b7321c8b4e2be49bef838b453fd968, type: 3}
-  <ItemSelectedImage>k__BackingField: {fileID: 21300000, guid: eacd189a043c5c04c8f8ae3a4eac01aa, type: 3}
+  <ItemImage>k__BackingField: {fileID: 21300000, guid: 5e77362493e713e4496c09118bad1ddf, type: 3}
+  <ItemSelectedImage>k__BackingField: {fileID: 21300000, guid: 43ac3bf93b0bcb8468d4e0eec20ef610, type: 3}
   _isPermanent: 0
   _objSprite: {fileID: 21300000, guid: e72310df060779248849f41e84477ce6, type: 3}
   _objSpriteSelected: {fileID: 21300000, guid: 59a88e1e5e33eff42890fd27d610030a, type: 3}
+  _monologue: 'Perfect, now I don''t have to worry about the ink, this bottle is
+    strong enough. '
 --- !u!114 &206888110654821666
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 1c74d4461988c7b4fa4c211575de7416, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9584e1c7d0a398045a053ee126a763ac, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -116,11 +116,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <ItemName>k__BackingField: Plastic
-  <ItemImage>k__BackingField: {fileID: 21300000, guid: 1c74d4461988c7b4fa4c211575de7416, type: 3}
-  <ItemSelectedImage>k__BackingField: {fileID: 21300000, guid: 2c89bd299ebf5274094364c3d0d692ce, type: 3}
+  <ItemImage>k__BackingField: {fileID: 21300000, guid: 9584e1c7d0a398045a053ee126a763ac, type: 3}
+  <ItemSelectedImage>k__BackingField: {fileID: 21300000, guid: 8bfc91878ffe2a9458a5aa7fd2a54a56, type: 3}
   _isPermanent: 0
   _objSprite: {fileID: 21300000, guid: e72310df060779248849f41e84477ce6, type: 3}
   _objSpriteSelected: {fileID: 21300000, guid: 59a88e1e5e33eff42890fd27d610030a, type: 3}
+  _monologue: And a piece of plastic, one!
 --- !u!114 &206888110654821666
 MonoBehaviour:
   m_ObjectHideFlags: 0

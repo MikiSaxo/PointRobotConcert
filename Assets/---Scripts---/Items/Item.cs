@@ -14,6 +14,7 @@ public class Item : MonoBehaviour, IInteractable
     [SerializeField] private bool _isPermanent;
     [SerializeField] private Sprite _objSprite;
     [SerializeField] private Sprite _objSpriteSelected;
+    [SerializeField] private string _monologue;
 
     private bool _isEmpty;
     private bool _hasTouchPlayer;

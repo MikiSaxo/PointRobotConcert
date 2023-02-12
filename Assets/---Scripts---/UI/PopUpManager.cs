@@ -20,7 +20,7 @@ public class PopUpManager : MonoBehaviour
     public void InitNewItem(Sprite icon, string desc)
     {
         _iconItem.sprite = icon;
-        _description.text = desc;
+        _description.text = $"<wave>{desc}";
 
         if (_hasAlreadyAnim)
             _stopCoroutine = true;
