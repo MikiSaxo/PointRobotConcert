@@ -108,4 +108,9 @@ public class CanvasInventory : MonoBehaviour
         DialogueManager.Instance.ActivateDialogue("There's a great Iron Maiden concert going on right now. I'll have to find a way to create a ticket");
         _hasFirstDialogue = true;
     }
+
+    public void DeleteYourself()
+    {
+        Destroy(gameObject);
+    }
 }

@@ -53,4 +53,9 @@ public class AudioManager : MonoBehaviour
         }
         s.Source.Stop();
     }
+
+    public void DeleteYourself()
+    {
+        Destroy(gameObject);
+    }
 }

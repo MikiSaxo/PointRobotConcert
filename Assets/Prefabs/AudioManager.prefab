@@ -54,7 +54,7 @@ MonoBehaviour:
     Source: {fileID: 0}
   - Name: Ambiance
     Clip: {fileID: 8300000, guid: aef0cd75791f82e458d737e7513b7511, type: 3}
-    Volume: 0.309
+    Volume: 1
     Pitch: 1
     Loop: 1
     Source: {fileID: 0}

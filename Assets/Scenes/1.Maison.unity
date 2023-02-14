@@ -584,7 +584,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: a1ab743d5a7f4e647a5091ebb5d4e45f, type: 3}
     - target: {fileID: 206888110654821671, guid: 996523af60bebe04c81b8aede20bb05a, type: 3}
       propertyPath: m_Radius
-      value: 0.9036908
+      value: 0.31828958
       objectReference: {fileID: 0}
     - target: {fileID: 206888110654821671, guid: 996523af60bebe04c81b8aede20bb05a, type: 3}
       propertyPath: m_Offset.y
@@ -736,7 +736,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: a1ab743d5a7f4e647a5091ebb5d4e45f, type: 3}
     - target: {fileID: 206888110654821671, guid: 996523af60bebe04c81b8aede20bb05a, type: 3}
       propertyPath: m_Radius
-      value: 0.9036908
+      value: 0.44492257
       objectReference: {fileID: 0}
     - target: {fileID: 206888110654821671, guid: 996523af60bebe04c81b8aede20bb05a, type: 3}
       propertyPath: m_Offset.y
@@ -1007,6 +1007,14 @@ PrefabInstance:
       propertyPath: <ItemSelectedImage>k__BackingField
       value: 
       objectReference: {fileID: 21300000, guid: f9c9f5904c18a714b8a0db1010f85b3f, type: 3}
+    - target: {fileID: 206888110654821671, guid: 996523af60bebe04c81b8aede20bb05a, type: 3}
+      propertyPath: m_Radius
+      value: 0.39282015
+      objectReference: {fileID: 0}
+    - target: {fileID: 206888110654821671, guid: 996523af60bebe04c81b8aede20bb05a, type: 3}
+      propertyPath: m_Offset.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 206888110654821673, guid: 996523af60bebe04c81b8aede20bb05a, type: 3}
       propertyPath: m_Name
       value: Scissors

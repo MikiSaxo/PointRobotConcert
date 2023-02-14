@@ -17,6 +17,8 @@ public class BackToMenu : MonoBehaviour
 
     private void ChangeSceneToMenu()
     {
+        CanvasInventory.Instance.DeleteYourself();
+        AudioManager.Instance.DeleteYourself();
         SceneManager.LoadScene(0);
     }
 }
