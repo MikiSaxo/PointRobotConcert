@@ -118,6 +118,7 @@ MonoBehaviour:
   <ItemName>k__BackingField: Plastic
   <ItemImage>k__BackingField: {fileID: 21300000, guid: 9584e1c7d0a398045a053ee126a763ac, type: 3}
   <ItemSelectedImage>k__BackingField: {fileID: 21300000, guid: 8bfc91878ffe2a9458a5aa7fd2a54a56, type: 3}
+  <ItemMonologue>k__BackingField: And a piece of plastic, one!
   _isPermanent: 0
   _objSprite: {fileID: 21300000, guid: e72310df060779248849f41e84477ce6, type: 3}
   _objSpriteSelected: {fileID: 21300000, guid: 59a88e1e5e33eff42890fd27d610030a, type: 3}

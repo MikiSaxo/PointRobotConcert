@@ -76,7 +76,7 @@ public class FabrikManager : MonoBehaviour
         {
             Destroy(itemFabrik);
         }
-
+        AudioManager.Instance.PlaySound("Fusion");
         _allItemsFabrikObj.Clear();
         _allItemsFabrikString.Clear();
         _saveItemCanBeFabrik = null;

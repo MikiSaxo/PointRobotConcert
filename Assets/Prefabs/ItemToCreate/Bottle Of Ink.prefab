@@ -118,6 +118,8 @@ MonoBehaviour:
   <ItemName>k__BackingField: Bottle Of Ink
   <ItemImage>k__BackingField: {fileID: 21300000, guid: 5e77362493e713e4496c09118bad1ddf, type: 3}
   <ItemSelectedImage>k__BackingField: {fileID: 21300000, guid: 43ac3bf93b0bcb8468d4e0eec20ef610, type: 3}
+  <ItemMonologue>k__BackingField: 'Perfect, now I don''t have to worry about the
+    ink, this bottle is strong enough. '
   _isPermanent: 0
   _objSprite: {fileID: 21300000, guid: e72310df060779248849f41e84477ce6, type: 3}
   _objSpriteSelected: {fileID: 21300000, guid: 59a88e1e5e33eff42890fd27d610030a, type: 3}

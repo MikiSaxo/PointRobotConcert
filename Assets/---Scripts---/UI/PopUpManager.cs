@@ -14,19 +14,21 @@ public class PopUpManager : MonoBehaviour
     [SerializeField] private float _timeToWait;
     [SerializeField] private float _timeToDespawn;
 
-    private bool _hasAlreadyAnim;
-    private bool _stopCoroutine;
+    // private bool _hasAlreadyAnim;
+    // private bool _stopCoroutine;
 
-    public void InitNewItem(Sprite icon, string desc)
+    public void InitNewItem(Sprite icon, string itemName, string monologue)
     {
         _iconItem.sprite = icon;
-        _description.text = $"<wave>{desc}";
+        _description.text = $"<wave>{itemName}";
 
-        if (_hasAlreadyAnim)
-            _stopCoroutine = true;
+        // if (_hasAlreadyAnim)
+        //     _stopCoroutine = true;
 
         StartCoroutine(AnimNewItem());
-        _hasAlreadyAnim = true;
+        // _hasAlreadyAnim = true;
+        
+        DialogueManager.Instance.ActivateDialogue(monologue);
     }
 
     IEnumerator AnimNewItem()
@@ -38,25 +40,19 @@ public class PopUpManager : MonoBehaviour
         transform.DOScale(1, _timeToSpawn);
         yield return new WaitForSeconds(_timeToWait);
 
-        if (_stopCoroutine)
-        {
-            ForceResetAnim();
-            yield break;
-        }
+        // if (_stopCoroutine)
+        // {
+        //     ForceResetAnim();
+        //     yield break;
+        // }
 
         transform.DOScale(1.25f, .1f);
         yield return new WaitForSeconds(.15f);
 
-        if (_stopCoroutine)
-        {
-            ForceResetAnim();
-            yield break;
-        }
-
         transform.DOScale(0, _timeToDespawn);
 
-        _hasAlreadyAnim = false;
-        _stopCoroutine = false;
+        // _hasAlreadyAnim = false;
+        // _stopCoroutine = false;
     }
 
     private void ForceResetAnim()

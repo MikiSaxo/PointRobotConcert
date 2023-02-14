@@ -118,6 +118,9 @@ MonoBehaviour:
   <ItemName>k__BackingField: Empty Bottle
   <ItemImage>k__BackingField: {fileID: 21300000, guid: 31ce42b1f33791c439c3384d72ead633, type: 3}
   <ItemSelectedImage>k__BackingField: {fileID: 21300000, guid: d575741079ac14b49b9e5f474ea61ec4, type: 3}
+  <ItemMonologue>k__BackingField: Gobble, gobble, gobble... aaahhhh, that feels good!
+    Just kidding, I'm a robot. Now that it is empty, this bottle could be useful
+    as a container.
   _isPermanent: 0
   _objSprite: {fileID: 21300000, guid: e72310df060779248849f41e84477ce6, type: 3}
   _objSpriteSelected: {fileID: 21300000, guid: 59a88e1e5e33eff42890fd27d610030a, type: 3}

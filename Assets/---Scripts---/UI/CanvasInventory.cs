@@ -12,6 +12,7 @@ public class CanvasInventory : MonoBehaviour
     [HideInInspector] public bool SaveLastDoorSide { get; set; }
     [HideInInspector] public bool IsMouseOnUI { get; private set; }
     [HideInInspector] public bool IsInventoryOpen { get; private set; }
+    [HideInInspector] public bool IsDialogueOpen { get; set; }
     [HideInInspector] public bool IsFabrikOpen { get; private set; }
 
     [Header("Setup")]
@@ -27,6 +28,7 @@ public class CanvasInventory : MonoBehaviour
     [SerializeField] private GameObject _backInventoryButton;
 
     private List<string> _allItemsPickedUp = new List<string>();
+    private bool _hasFirstDialogue;
 
     private void Awake()
     {
@@ -43,6 +45,7 @@ public class CanvasInventory : MonoBehaviour
         string currentSceneName = SceneManager.GetActiveScene().name;
         if (currentSceneName == "--InitScene--")
             SceneManager.LoadScene("GameCommon");
+        LaunchFirstDialogue();
     }
 
     public void AddItem(Item item, bool isFirstTime)
@@ -52,7 +55,7 @@ public class CanvasInventory : MonoBehaviour
         newItem.GetComponent<ItemUi>().Initialize(item, false);
         
         if(isFirstTime)
-            _popUpManager.InitNewItem(item.ItemImage, item.ItemName);
+            _popUpManager.InitNewItem(item.ItemImage, item.ItemName, item.ItemMonologue);
     }
 
     public void RemoveItem(string name)
@@ -93,17 +96,16 @@ public class CanvasInventory : MonoBehaviour
         IsMouseOnUI = which;
     }
 
-    // public void OpenFabrik()
-    // {
-    //     IsFabrikOpen = true;
-    //     _fabrik.transform.DOScale(1, 0.5f);
-    //     _transformButton.transform.DOScale(1, 0.5f);
-    // }
-    //
-    // public void CloseFabrik()
-    // {
-    //     IsFabrikOpen = false;
-    //     _fabrik.transform.DOScale(1, 0.5f);
-    //     _transformButton.transform.DOScale(1, 0.5f);
-    // }
+    private void Update()
+    {
+        if(IsDialogueOpen && Input.GetMouseButtonDown(0))
+            DialogueManager.Instance.DeactivateDialogue();
+    }
+
+    private void LaunchFirstDialogue()
+    {
+        if (_hasFirstDialogue) return;
+        DialogueManager.Instance.ActivateDialogue("There's a great Iron Maiden concert going on right now. I'll have to find a way to create a ticket");
+        _hasFirstDialogue = true;
+    }
 }

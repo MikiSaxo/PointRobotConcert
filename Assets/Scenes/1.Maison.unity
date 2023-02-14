@@ -301,6 +301,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: e29499a801b31c34782efd79d5396807, type: 3}
     - target: {fileID: 206888110654821670, guid: 996523af60bebe04c81b8aede20bb05a, type: 3}
+      propertyPath: <ItemMonologue>k__BackingField
+      value: I should have enough ink with this, I just need to figure out how to
+        transport it safely.
+      objectReference: {fileID: 0}
+    - target: {fileID: 206888110654821670, guid: 996523af60bebe04c81b8aede20bb05a, type: 3}
       propertyPath: <SelectedImage>k__BackingField
       value: 
       objectReference: {fileID: 21300000, guid: 4dea29215f4861040a4dc5305079fc56, type: 3}
@@ -546,6 +551,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: e29499a801b31c34782efd79d5396807, type: 3}
     - target: {fileID: 206888110654821670, guid: 996523af60bebe04c81b8aede20bb05a, type: 3}
+      propertyPath: <ItemMonologue>k__BackingField
+      value: Ink! It's perfect but I need a bit more.
+      objectReference: {fileID: 0}
+    - target: {fileID: 206888110654821670, guid: 996523af60bebe04c81b8aede20bb05a, type: 3}
       propertyPath: <SelectedImage>k__BackingField
       value: 
       objectReference: {fileID: 21300000, guid: 4dea29215f4861040a4dc5305079fc56, type: 3}
@@ -685,6 +694,10 @@ PrefabInstance:
       propertyPath: <ItemImage>k__BackingField
       value: 
       objectReference: {fileID: 21300000, guid: e29499a801b31c34782efd79d5396807, type: 3}
+    - target: {fileID: 206888110654821670, guid: 996523af60bebe04c81b8aede20bb05a, type: 3}
+      propertyPath: <ItemMonologue>k__BackingField
+      value: Great, just one more cartridge and that should be enough.
+      objectReference: {fileID: 0}
     - target: {fileID: 206888110654821670, guid: 996523af60bebe04c81b8aede20bb05a, type: 3}
       propertyPath: <SelectedImage>k__BackingField
       value: 
@@ -946,6 +959,10 @@ PrefabInstance:
       propertyPath: <ItemImage>k__BackingField
       value: 
       objectReference: {fileID: 21300000, guid: 5956315731ecc5c4986d61ff94de6ca7, type: 3}
+    - target: {fileID: 206888110654821670, guid: 996523af60bebe04c81b8aede20bb05a, type: 3}
+      propertyPath: <ItemMonologue>k__BackingField
+      value: Scissors! An object that can always be useful, but for what?
+      objectReference: {fileID: 0}
     - target: {fileID: 206888110654821670, guid: 996523af60bebe04c81b8aede20bb05a, type: 3}
       propertyPath: <ItemSelectedImage>k__BackingField
       value: 

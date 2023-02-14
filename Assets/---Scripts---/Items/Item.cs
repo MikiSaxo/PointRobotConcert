@@ -1,8 +1,6 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
-using Unity.VisualScripting.ReorderableList;
 using UnityEngine;
 
 public class Item : MonoBehaviour, IInteractable
@@ -10,11 +8,11 @@ public class Item : MonoBehaviour, IInteractable
     [field: SerializeField] public string ItemName { get; private set; }
     [field: SerializeField] public Sprite ItemImage { get; private set; }
     [field: SerializeField] public Sprite ItemSelectedImage { get; private set; }
+    [field: SerializeField] public string ItemMonologue { get; private set; }
 
     [SerializeField] private bool _isPermanent;
     [SerializeField] private Sprite _objSprite;
     [SerializeField] private Sprite _objSpriteSelected;
-    [SerializeField] private string _monologue;
 
     private bool _isEmpty;
     private bool _hasTouchPlayer;
@@ -37,6 +35,7 @@ public class Item : MonoBehaviour, IInteractable
 
         _clicked = true;
         CheckIfGoToInventory();
+        //AudioManager.Instance.PlaySound("Button");
     }
 
     private void CheckIfGoToInventory()
@@ -68,6 +67,7 @@ public class Item : MonoBehaviour, IInteractable
         {
             _hasTouchPlayer = true;
             CheckIfGoToInventory();
+            AudioManager.Instance.PlaySound("Button");
         }
     }
 

@@ -118,6 +118,8 @@ MonoBehaviour:
   <ItemName>k__BackingField: Entry Ticket
   <ItemImage>k__BackingField: {fileID: 21300000, guid: 33dfe13069d04d540a9e34a83acb0ffc, type: 3}
   <ItemSelectedImage>k__BackingField: {fileID: 21300000, guid: d780a2c91db2e514b8e99710b3b02769, type: 3}
+  <ItemMonologue>k__BackingField: Hehehe... It's perfect, I'm sure that the big guy
+    at the entrance of the room won't see anything wrong with it.
   _isPermanent: 0
   _objSprite: {fileID: 21300000, guid: e72310df060779248849f41e84477ce6, type: 3}
   _objSpriteSelected: {fileID: 21300000, guid: 59a88e1e5e33eff42890fd27d610030a, type: 3}

@@ -157,6 +157,7 @@ public class GameManager : MonoBehaviour
 
     public void AddItem(Item item)
     {
+        AudioManager.Instance.PlaySound("PickUp");
         ResetLastEntered();
         ResetLastTouched();
         CanvasInventory.Instance.AddItem(item, true);

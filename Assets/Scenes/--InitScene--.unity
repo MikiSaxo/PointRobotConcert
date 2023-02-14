@@ -130,6 +130,28 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 864200823, guid: fa8c5b259fa081a4490034a025d201b3, type: 3}
+      propertyPath: behaviorValues.defaults.sizeWaveSize
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 864200823, guid: fa8c5b259fa081a4490034a025d201b3, type: 3}
+      propertyPath: behaviorValues.defaults.sizeAmplitude
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 864200823, guid: fa8c5b259fa081a4490034a025d201b3, type: 3}
+      propertyPath: behaviorValues.defaults.sizeFrequency
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 864200824, guid: fa8c5b259fa081a4490034a025d201b3, type: 3}
+      propertyPath: m_text
+      value: 'LABLA blabla BLABLA blabla BLABLA blabla BLABLA blabla BLABLA blabla
+        BLABLA blabla BLABLA blabla BLABLA blabla BLABLA blabla BLABLA blabla BLABLA
+        blabla BLABLA blabla '
+      objectReference: {fileID: 0}
+    - target: {fileID: 864200824, guid: fa8c5b259fa081a4490034a025d201b3, type: 3}
+      propertyPath: m_fontSize
+      value: 53.45
+      objectReference: {fileID: 0}
     - target: {fileID: 1746719842876496929, guid: fa8c5b259fa081a4490034a025d201b3, type: 3}
       propertyPath: m_Name
       value: CanvasInventory

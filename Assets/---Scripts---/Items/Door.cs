@@ -2,7 +2,6 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Playables;
 using UnityEngine.SceneManagement;
 
 public class Door : MonoBehaviour, IInteractable
@@ -52,12 +51,20 @@ public class Door : MonoBehaviour, IInteractable
     private void ChangeScene()
     {
         PlayerPrefs.SetString(GameManager.NextSceneKey, _nextScene);
+
+        if (_nextScene == "4.Concert")
+        {
+            AudioManager.Instance.StopSound("Ambiance");
+            AudioManager.Instance.PlaySound("Concert");
+        }
+        
         SceneManager.LoadScene("GameCommon");
     }
 
     public void OnPointerEnter()
     {
         GetComponent<SpriteRenderer>().sprite = SelectedImage;
+        // AudioManager.Instance.PlaySound("Button");
     }
 
     public void OnPointerExit()
