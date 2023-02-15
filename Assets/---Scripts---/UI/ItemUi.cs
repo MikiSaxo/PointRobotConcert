@@ -36,7 +36,7 @@ public class ItemUi : MonoBehaviour
         {
             //Add to fabrik
             FabrikManager.Instance.AddItem(_saveItem);
-            CanvasInventory.Instance.RemoveItem(_saveItem.ItemName);
+            //CanvasInventory.Instance.RemoveItem(_saveItem.ItemName);
             Destroy(gameObject);
         }
     }
